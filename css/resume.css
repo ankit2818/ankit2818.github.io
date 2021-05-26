@@ -1,0 +1,134 @@
+.wrapper {
+  background-color: var(--color_primary_light);
+}
+
+.resume-container {
+  width: 100%;
+  height: 100%;
+  padding: 8rem;
+}
+
+.resume-wrapper {
+  width: 50%;
+  margin: auto;
+  min-width: 675px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume-wrapper h1 {
+  font: var(--font_heading);
+  font-size: 3rem;
+}
+
+.experience-container,
+.education-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.education-container {
+  margin-top: 5rem;
+}
+
+.experience-container .heading,
+.education-container .heading {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.experience-container .heading h2,
+.education-container .heading h2 {
+  font: var(--font_heading);
+  font-size: 2rem;
+}
+
+.experience-container .heading a,
+.education-container .heading a {
+  text-decoration: none;
+  outline: none;
+  padding: 0.4rem 2.5rem;
+  border: 1px solid;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font: var(--font_link);
+  transition: 250ms ease-in-out;
+  border: 2px solid rgb(0, 76, 241);
+  background: rgb(0, 76, 241);
+  color: #fff;
+  font-weight: 900;
+  border-color: rgb(0, 76, 241);
+}
+
+.experience-container .heading a:hover {
+  background: transparent;
+  color: #000;
+  border-color: rgb(0, 76, 241);
+}
+
+.experience,
+.education {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5rem 4rem;
+  background-color: #fff;
+  box-shadow: -1rem 1.2rem 50px rgba(0, 0, 0, 0.2);
+}
+
+.education > .card {
+  display: flex;
+  align-items: center;
+}
+
+.card .info {
+  width: 100%;
+}
+
+.info .tenure,
+.info .duration {
+  font: var(--font_tag);
+  font-weight: 900;
+  color: rgb(0, 76, 241);
+  margin-bottom: 1rem;
+}
+
+.info .job-position,
+.info .standard {
+  font: var(--font_p);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.info .company-name,
+.info .location,
+.info .institution-name {
+  font: var(--font_link);
+  margin-bottom: 1.2rem;
+}
+
+.info .institution-name {
+  font-style: italic;
+}
+
+.card .about {
+  font: var(--font_link);
+  letter-spacing: 0.1rem;
+  padding-top: 3rem;
+  line-height: 2rem;
+}
