@@ -1,0 +1,99 @@
+.wrapper {
+  background-color: var(--color_primary_light);
+}
+
+.project-container {
+  width: 100%;
+  height: 100%;
+  padding: 8rem;
+}
+
+.project-wrapper {
+  width: 50%;
+  margin: auto;
+  min-width: 675px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-wrapper h1 {
+  font: var(--font_heading);
+  font-size: 3rem;
+}
+
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 4rem;
+  background-color: #fff;
+  gap: 1.5rem;
+  box-shadow: -1rem 1.2rem 50px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  display: flex;
+  gap: 1rem;
+  font: var(--font_tag);
+}
+
+.title a {
+  text-decoration: none;
+  color: rgb(0, 76, 241);
+}
+
+.about p {
+  font: var(--font_p);
+}
+
+.tech-stack {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.github-link {
+  margin-top: 2rem;
+  font: var(--font_tag);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.github-link a {
+  text-decoration: none;
+  color: rgb(0, 76, 241);
+  animation: blink 1s infinite;
+  transition: 1s ease-in;
+}
+
+.github-link a i {
+  font-size: 2rem;
+}
+
+@keyframes blink {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
