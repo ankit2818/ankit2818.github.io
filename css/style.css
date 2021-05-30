@@ -228,6 +228,8 @@ ul > li > a {
 .details {
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
+  gap: 1.5rem;
   justify-content: space-evenly;
 }
 .details > div {
@@ -246,4 +248,71 @@ ul > li > a {
   color: #000;
   padding: 0 0.2rem;
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1550px) {
+  .main-card {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    background: var(--color_primary_dark);
+  }
+  .main-card {
+    width: 100%;
+    background-color: #fff;
+    flex-direction: column;
+  }
+
+  .card-left {
+    box-shadow: none;
+  }
+
+  .card-right {
+    text-align: center;
+    padding: 4rem 4rem;
+  }
+
+  .cta {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-card {
+    width: 100%;
+    margin: 0;
+  }
+
+  header {
+    height: 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-card {
+    width: 100%;
+    margin: 0;
+  }
+
+  header {
+    height: 4rem;
+  }
+
+  .card-right {
+    padding: 2rem 1rem;
+  }
+
+  nav > h2 {
+    margin-left: 1rem;
+  }
+
+  nav > ul {
+    margin-right: 1rem;
+  }
+  ul > li {
+    margin: 0 0.5rem;
+  }
 }
